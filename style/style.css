@@ -10,8 +10,8 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     line-height: 2;
-    color: #342828;
-    background: #e3cdb6;
+    color: #1E1E1E;
+    background: #F5F5F2;
 }
 
 h1, h2 {
@@ -29,7 +29,7 @@ ul {
 
 .navbar {
     background: #342828;
-    color: #fefefe;
+    color: #F5F5F2;
     height: 60px;
 }
 
@@ -40,7 +40,7 @@ ul {
 }
 
 .navbar a {
-    color: #fefefe;
+    color: #F5F5F2;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -66,8 +66,7 @@ ul {
 }
 
 .header {
-    color: #f5f0ea;
-    padding: 0 20px;
+    color: #F5F5F2;
 }
 
 .header h1 {
@@ -77,33 +76,28 @@ ul {
 }
 
 .action {
-    padding: 0 20px;
+    padding: 30px 0;
 }
 
 .button {
     border-radius: 10px;
-    background-color: #fefefe;
+    background-color: #F5F5F2;
     border: none;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-    color: #342828;
+    color: #1E1E1E;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
     padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-#mobile-navbar {
-    padding: 0 20px;
-}
-
-#mobile-image {
+.mobile-image {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.right-side {
+.desktop-image {
     display: none;
 }
 
@@ -111,8 +105,35 @@ ul {
     display: none;
 }
 
+.home {
+    padding: 30px 0;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.home img {
+    border-radius: 15px;
+}
+
+.home .benefits {
+    padding: 20px 0;
+    background-color: #342828;
+    color: #F5F5F2;
+}
+
+.home .benefits .cards {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #F5F5F2;
+    color: #1E1E1E;
+    max-width: 768px;
+}
+
 @media only screen and (min-width: 768px) {
-    #mobile-image {
+    .mobile-image {
         display: none;
     }
 
@@ -133,7 +154,7 @@ ul {
         display: flex;
         justify-content: space-between;
         padding: 0;
-
+        /* max-width: 1400px;
         /* min-width: 875px; */
     }
     
@@ -143,7 +164,7 @@ ul {
         min-height: 100vh;
     }
     
-    .right-side {
+    #hero-image-dt {
         margin-left: 20px;
         max-height: 100vh;
         max-width: 100%;
@@ -162,7 +183,6 @@ ul {
     }
     
     .header .container {
-        display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 80px;
@@ -204,6 +224,19 @@ ul {
         opacity: 1;
         right: 0;
     }
+
+    .flex-container{
+        display: flex;
+    }
+
+    #hands-image-dt {
+        margin-right: 40px;
+        margin-bottom: 40px;
+        max-width: 600px;
+        width: 50%;
+        display: block; 
+        object-fit: contain;
+    }
     
 }
 
@@ -217,7 +250,7 @@ ul {
         width: 620px;
     }
 
-    .right-side {
+    #hero-image-dt {
         position: relative;
         margin-left: 0;
         z-index: 0;
